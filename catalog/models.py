@@ -5,6 +5,7 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User')
     # Название медали
     title = models.CharField(max_length=200)
+    image = models.ImageField()
     # Описание медали
     text = models.TextField()
     created_date = models.DateTimeField(
